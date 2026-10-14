@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">&lt;/&gt; Coding <span>Academy</span></div>
+  <nav>
+    <button class="active" data-view="galleryView">Gallery</button>
+    <button data-view="registerView">Pendaftaran</button>
+  </nav>
+</header>
+
+<main>
+  <!-- HALAMAN GALLERY -->
+  <section id="galleryView" class="view active">
+    <div class="hero">
+      <div>
+        <span class="badge">✦ Belajar Coding, Bangun Masa Depan</span>
+        <h1>Mulai Ide.<br><span>Jadi Kode.</span></h1>
+        <p>
+          Tingkatkan kemampuan teknologi melalui pelatihan
+          pemrograman, proyek nyata, dan bimbingan mentor.
+          Mulai perjalananmu menjadi developer bersama kami!
+        </p>
+        <button class="primary" data-go="registerView">
+          Daftar Sekarang ↗
+        </button>
+        <button class="secondary" id="exploreBtn">
+          Lihat Kegiatan
+        </button>
+      </div>
+
+      <div class="code-box">
+        <p>const future = "developer";</p>
+        <p>function buildDreams() {</p>
+        <p>&nbsp;&nbsp;learn();</p>
+        <p>&nbsp;&nbsp;create();</p>
+        <p>&nbsp;&nbsp;return "You did it!";</p>
+        <p>}</p>
+        <br>
+        <p>// Your journey starts here!</p>
+      </div>
+    </div>
+
+    <div id="activities">
+      <div class="section-title">
+        <h2>Gallery Kegiatan Pelatihan</h2>
+        <p>Kenali kegiatan seru di Coding Academy.</p>
+      </div>
+
+      <div class="gallery">
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+            alt="Pelatihan coding">
+          <div class="card-content">
+            <h3>Web Development</h3>
+            <p>Belajar HTML, CSS, dan JavaScript untuk membuat website modern dan responsif.</p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+            alt="Diskusi kelompok">
+          <div class="card-content">
+            <h3>Team Project</h3>
+            <p>Peserta bekerja dalam tim untuk merancang aplikasi dan menyelesaikan proyek bersama.</p>
+            <span class="tag">Kolaborasi</span>
+            <span class="tag">Project</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+            alt="Mentoring coding">
+          <div class="card-content">
+            <h3>Mentoring & Code Review</h3>
+            <p>Mentor membantu peserta memahami kode, menemukan kesalahan, dan memperbaiki program.</p>
+            <span class="tag">Mentoring</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+            alt="Tim teknologi">
+          <div class="card-content">
+            <h3>Mini Hackathon</h3>
+            <p>Tantang kreativitas dengan membuat prototipe solusi digital bersama tim.</p>
+            <span class="tag">Inovasi</span>
+            <span class="tag">Prototipe</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+            alt="Pelatihan Python">
+          <div class="card-content">
+            <h3>Python for Beginners</h3>
+            <p>Mempelajari variabel, percabangan, perulangan, dan logika pemrograman.</p>
+            <span class="tag">Python</span>
+            <span class="tag">Pemula</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
+            alt="Presentasi proyek">
+          <div class="card-content">
+            <h3>Demo Day</h3>
+            <p>Peserta mempresentasikan proyek akhir dan memperoleh masukan untuk pengembangan karya.</p>
+            <span class="tag">Presentasi</span>
+            <span class="tag">Portfolio</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="cta">
+        <div>
+          <h3>Siap Belajar Coding?</h3>
+          <p>Daftarkan dirimu dan pilih bahasa pemrograman favoritmu.</p>
+        </div>
+        <button class="primary" data-go="registerView">
+          Isi Form Pendaftaran →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HALAMAN PENDAFTARAN -->
+  <section id="registerView" class="view">
+    <div class="section-title">
+      <h2>Formulir Pendaftaran</h2>
+      <p>Lengkapi data diri untuk bergabung dengan Coding Academy.</p>
+    </div>
+
+    <div class="form-layout">
+      <aside class="intro">
+        <h2>Bangun Skill Masa Depan!</h2>
+        <p>
+          Belajar dari dasar, berlatih membuat proyek,
+          dan kembangkan kemampuanmu bersama komunitas coding.
+        </p>
+        <ul>
+          <li>Materi untuk pemula</li>
+          <li>Latihan proyek nyata</li>
+          <li>Bimbingan mentor</li>
+        </ul>
+      </aside>
+
+      <div>
+        <form id="registrationForm">
+          <h3>Data Peserta</h3>
+          <p>Kolom bertanda * wajib diisi.</p>
+
+          <div class="field">
+            <label for="nik">NIK *</label>
+            <input
+              id="nik" name="nik" type="text"
+              inputmode="numeric"
+              pattern="[0-9]{16}"
+              minlength="16" maxlength="16"
+              placeholder="Masukkan 16 digit NIK" required>
+            <small>NIK harus terdiri dari 16 digit angka.</small>
+          </div>
+
+          <div class="field">
+            <label for="nama">Nama Lengkap *</label>
+            <input
+              id="nama" name="nama" type="text"
+              placeholder="Masukkan nama lengkap" required>
+          </div>
+
+          <div class="field">
+            <span class="label">Jenis Kelamin *</span>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="gender"
+                  value="Laki-laki" required>
+                Laki-laki
+              </label>
+              <label>
+                <input type="radio" name="gender"
+                  value="Perempuan" required>
+                Perempuan
+              </label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="hp">Nomor HP *</label>
+            <input
+              id="hp" name="hp" type="tel"
+              pattern="[0-9+() -]{9,18}"
+              placeholder="Contoh: 081234567890" required>
+          </div>
+
+          <div class="field">
+            <label for="alamat">Alamat *</label>
+            <textarea
+              id="alamat" name="alamat"
+              placeholder="Masukkan alamat lengkap" required></textarea>
+          </div>
+
+          <div class="field">
+            <label for="bahasa">
+              Bahasa Pemrograman yang Diminati *
+            </label>
+            <select id="bahasa" name="bahasa" required>
+              <option value="">-- Pilih bahasa pemrograman --</option>
+              <option>JavaScript</option>
+              <option>Python</option>
+              <option>PHP</option>
+              <option>Java</option>
+              <option>C++</option>
+              <option>C#</option>
+              <option>Go</option>
+              <option>Kotlin</option>
+              <option>Swift</option>
+              <option>Lainnya / masih ingin mengenal</option>
+            </select>
+          </div>
+
+          <button type="submit" class="primary full-btn">
+            Simpan Pendaftaran ✓
+          </button>
+        </form>
+
+        <!-- HASIL PENDAFTARAN -->
+        <section id="result" class="result" aria-live="polite">
+          <h3>✓ Pendaftaran Berhasil!</h3>
+          <p>Berikut data yang telah Anda isi:</p>
+          <div id="resultGrid"></div>
+
+          <div class="result-actions">
+            <button type="button" class="secondary" id="editBtn">
+              Ubah Data
+            </button>
+            <button type="button" class="primary" id="printBtn">
+              Cetak Hasil
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Coding Academy — Belajar Hari Ini, Bangun Masa Depan.
+</footer>
+
+</body>
+</html>
